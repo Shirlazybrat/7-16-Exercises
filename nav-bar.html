@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+	ul{
+		/* Get rid os the bulllet points on the list item */
+		list-style: none;
+		/* Set a backgroind color */
+		background-color: #333; /* 333333 */
+		/* force the children to send the height up */
+		overflow:hidden;
+		/* Set a position of fixed so when the user scrolls I stat visible */
+		position:fixed;
+		/* Now that it's fixed, I need a set width */
+		width: 100%;
+		/* Set the starting point for our nav bar */
+		top: 0px;
+		left: 0px;
+		/* Force ul to start with 0 padding and 0 margin to the Browser doesn't interfere */
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.menu-item{
+		/* put the list items next to each other */
+		float:left;
+		/* set the font color */
+		color: pink;
+		/* Set the padding */
+		padding: 14px 16px;
+	}
+
+	.menu-item.about{
+		background-color: #4caf50;
+	}
+
+
+	/* Target the element with both clacces, menu-item AND about */
+	.menu-item:hover{
+		/* We need to set a hover background color */
+		/* set background-color to greenish */
+		background-color: #777;
+		/* Float the element to the rigjht of it's parent */
+		float: right;
+	}
+
+	#content{
+		width: 50%;
+		margin:auto;
+		height: 150vh;
+		margin-top: 50px;
+	}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li class="menu-item">Home</li>
+			<li class="menu-item">News</li>
+			<li class="menu-item">Contact</li>
+			<li class="menu-item about">About</li>
+		</ul>
+	</header>
+
+	<div id="content">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet suscipit dolorum eius, commodi nemo, doloremque deserunt praesentium repudiandae ipsa unde, repellendus ex velit! Quis eius aliquid facere ducimus saepe praesentium!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores officia earum voluptatibus perferendis quasi aliquid, eius ea quidem mollitia debitis. Est sequi ab minima quos iste itaque, debitis 
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni iste, voluptatum dolor enim veniam vero voluptatem possimus suscipit, ut repellendus commodi corporis, provident id. Magnam numquam, eius minus iusto!
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+

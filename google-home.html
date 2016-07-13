@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+	ul{
+		/* Get rid os the bulllet points on the list item */
+		list-style: none;
+		/* Set a backgroind color */
+		background-color: #fff; /* ffffff */
+		/* force the children to send the height up */
+		overflow:hidden;
+		/* Set a position of fixed so when the user scrolls I stat visible */
+		position:fixed;
+		/* Now that it's fixed, I need a set width */
+		width: 100%;
+		/* Set the starting point for our nav bar */
+		top: 0px;
+		left: 0px;
+		/* Force ul to start with 0 padding and 0 margin to the Browser doesn't interfere */
+		padding: 0px;
+		margin: 0px;
+		float: left;
+	}
+
+	.menu-item{
+		/* put the list items next to each other */
+		float:right;
+		/* set the font color */
+		color: black;
+		/* Set the padding */
+		padding: 14px 16px;
+	}
+
+	.menu-item.about{
+		background-color: #4caf50;
+	}
+
+
+	/* Target the element with both clacces, menu-item AND about */
+	.menu-item:hover{
+		/* We need to set a hover background color */
+		/* set background-color to greenish */
+		background-color: #777;
+		/* Float the element to the right of it's parent */
+		float:right;
+	}
+/* ////////////////////////////////////////////////////////////////////// */
+
+	#header{
+		width: 50%;
+		margin:200px 100px 50px 100px;
+		height: 15%;
+		margin-top: 250px;
+		text-align: center;
+		position: relative;
+		top:70px;
+		left: 160px;
+	}
+
+	.photo {
+		position: absolute;
+		height:5px;
+		width: 5%;
+		background-color:blue;
+		/* To make this a circle (instead of a square) */ 
+		border-radius: 80%;
+		left: 210px;
+		top: 70px;		
+	}
+
+	.container{
+		text-align: center;
+		font-size: 5em;
+		margin: 200px;
+		padding: 10px 200px 10px 200px;
+		display: block;
+	}
+
+	input.mic{
+		position: relative;
+		height: 30px;
+		width: 600px;
+	}
+
+	img.mic{
+		top: 30px;
+		left:35px;
+	}
+	
+	.buttons{
+		height: 30px;
+		width: 60px;
+		display: inline;
+	}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li class="menu-item"><a href="http://www.gmail.com">Gmail</a></li>
+			<li class="menu-item">Images</li>
+			<li class="menu-item"></li>
+			<li class="menu-item grid"><img src="images/google-small-grid.png"></li>
+			<li class="menu-item bell"></li>
+			<li class="menu-item photo"></li>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div id="header">
+			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+		</div>
+
+		<div>
+			<input class="mic">
+				<img src="images/google-mic.png">
+			</input>
+		</div>
+
+		<div class="buttons">
+			<input value="Google Search">
+			<input value="I'm Feeling Lucky">
+		</div>
+	</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css" media="screen">
+		
+		nav{
+			position:fixed;
+			padding: 0px;
+			margin: 0px;
+			/* display:inline-block; */
+			overflow:hidden;
+			/* Now that it's fixed, I need a set width */
+			width: 100%;
+			/* Set the starting point for our nav bar */
+			top: 0px;
+			left: 0px;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		ul.menu-item{
+			/* Get rid os the bulllet points on the list item */
+		list-style: none;
+		/* force the children to send the height up */
+		overflow:hidden;
+		/* Set a position of fixed so when the user scrolls I stat visible */
+		position:fixed;
+		/* Now that it's fixed, I need a set width */
+		width: 100%;
+		/* Force ul to start with 0 padding and 0 margin to the Browser doesn't interfere */
+		padding: 0px;
+		margin: 0px;
+		display: inline;
+		text-decoration: none;
+		padding: 5px 15px 5px 15px;
+		}
+
+		.menu-item{
+		/* put the list items next to each other */
+		float:right;
+		/* set the font color */
+		color: black;
+		/* Set the padding */
+		padding: 14px 16px;
+	}
+		
+		.container{
+			text-align: center;
+			font-size: 5em;
+			display: block;
+		}
+
+		#header{
+			width: 50%;
+			height: 15%;
+			text-align: center;
+			margin: 100px 300px 10px 300px;
+		}
+
+		img.mic{
+			height:10px;
+			top:100px;
+			left: 200px;
+		}
+
+		input.mic{
+		height: 30px;
+		width: 600px;
+		position: relative;
+	}
+
+		.buttons{
+			text-align: center;
+		}
+
+		footer{
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			/* display: inline-block; */
+		}
+
+		.end{
+			/* put the list items next to each other */
+		float:left;
+		/* set the font color */
+		color: black;
+		/* Set the padding */
+		padding: 14px 16px;
+		list-style: none;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li class="menu-item"><a href="http://www.gmail.com">Gmail</a></li>
+			<li class="menu-item">Images</li>
+			<li class="menu-item"></li>
+			<li class="menu-item grid"><img src="images/google-small-grid.png"></li>
+			<li class="menu-item bell"></li>
+			<li class="menu-item photo"></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div id="header">
+			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+		</div>
+
+		<div>
+			<input class="mic">
+				<img src="images/google-mic.png">
+			</input>
+		</div>
+
+		<div class="buttons">
+			<input value="Google Search">
+			<input value="I'm Feeling Lucky">
+		</div>
+	</div>
+
+	<footer>
+		<ul>
+			<li class="end"><a href="#">Advertising</a></li>
+			<li class="end"><a href="#">Business</a></li>
+			<li class="end"><a href="#">About</a></li>
+		</ul>
+	</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
